@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Editors.
+.idea/
+.vscode/
+.ipynb_checkpoints/
+
+# Datasets, see README.md.
+data/
+
+# Training artifacts, checkpoints, results.
+outputs/
+*.pt
+*.pth
+*.log
+
+# Curvature caches. Observed graphs of the inductive setting write their own files here.
+curvature/*
+!curvature/a-computer_orc.npz
+!curvature/a-photo_orc.npz
+!curvature/citeseer_orc.npz
+!curvature/cora_orc.npz
+!curvature/ogbn-arxiv_approx_orc.npz
+!curvature/pubmed_orc.npz

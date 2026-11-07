@@ -1,0 +1,30 @@
+# G2MLP method settings, Eqs. (10)-(13) of the paper.
+#
+# A resolved configuration is `defaults`, then the block of the dataset under
+# `datasets`, then the --lambda_caw and --caw_transform flags of train_student.py.
+# The student MLP follows configs/models.yaml, with the width of the teacher's
+# penultimate features.
+
+defaults:
+  # Eq. (13).
+  lambda_kd: 1.0
+  lambda_ce: 0.0
+  lambda_caw: 0.1
+  eps_sg: 1.0e-8
+  tau: 1.0                # shared by teacher and student in the KD term
+  # Eq. (11).
+  gamma_z: 1.0
+  gamma_h: 1.0
+  curv_kind: orc          # orc | approx_orc
+  curv_alpha: 0.5         # lazy-walk parameter of ORC
+  # Eq. (10).
+  w2_eps: 1.0e-6
+  # none | student | both: Linear + ReLU heads for the W2 term only. student maps
+  # h_S; both also maps h_T through a head fixed at initialization.
+  caw_transform: none
+  max_epoch: 500
+  patience: 50
+
+datasets:
+  ogbn-arxiv:
+    curv_kind: approx_orc

@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "G2MLP: Graph Geometry-aware MLP"
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/CHENZhewei928/G2MLP-NeurIPS26"
+authors:
+  - family-names: Chen
+    given-names: Zhewei
+    affiliation: "Australian National University"
+  - family-names: Zhu
+    given-names: Hao
+    affiliation: "CSIRO Technology"
+  - family-names: Jiang
+    given-names: Jiaojiao
+    affiliation: "University of New South Wales"
+  - family-names: Zehmakan
+    given-names: "Ahad N."
+    affiliation: "Australian National University"
+preferred-citation:
+  type: conference-paper
+  title: "Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs"
+  authors:
+    - family-names: Chen
+      given-names: Zhewei
+      affiliation: "Australian National University"
+    - family-names: Zhu
+      given-names: Hao
+      affiliation: "CSIRO Technology"
+    - family-names: Jiang
+      given-names: Jiaojiao
+      affiliation: "University of New South Wales"
+    - family-names: Zehmakan
+      given-names: "Ahad N."
+      affiliation: "Australian National University"
+  collection-title: "Advances in Neural Information Processing Systems"
+  conference:
+    name: "NeurIPS 2026"
+  year: 2026
